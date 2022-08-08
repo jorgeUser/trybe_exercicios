@@ -44,13 +44,16 @@
     <script>
 
       let paragrafo = document.getElementsByTagName('p');
-      console.log(paragrafo);
       let mudaTexto = function(){
       paragrafo[0].innerText = ("Me vejo com sucesso na carreira de TI");
-      
       }
       mudaTexto();
-
+     let mudaCor01=document.getElementsByClassName('main-content');
+   
+      function mudaCorVerde(){
+          mudaCor01[0].style.backgroundColor = 'green';
+      }
+      mudaCorVerde();
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
